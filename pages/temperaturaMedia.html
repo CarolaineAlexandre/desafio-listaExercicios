@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio5</title>
+</head>
+
+<body>
+    <h1>Temperatura Média</h1>
+    <hr>
+    <p>Faça um código que receba a temperatura média de cada mês do ano e armazene-as em umalista. Após isto, calcule a média anual das temperaturas e mostre todas astemperaturas acima damédia anual, e em que mês elas ocorreram (mostrar o mês por extenso: 1 –Janeiro, 2 –Fevereiro).</p>
+    <h3> Lista de Clientes </h3>
+    <h4>Para alterar qualquer infomação: clique sobre a que deseja modificar</h4>
+    <table id="temp">
+        <tr>
+            <td>mês</td>
+            <td>temperatura</td>
+        </tr>
+    </table>
+    
+    <button id="add" type="button">Adicionar informação</button>
+    <br>
+    <button id="calc" type="button">Calcular média do ano</button>
+    <input>
+    <script>
+        function adicionar() {
+
+            let month = document.getElementById('tr');
+            const tr = document.createElement('tr');
+
+            let qtd = prompt('Quantidade de meses');
+
+            for (let i = 0; i < qtd; i++) {
+
+                const month = prompt('Digite o mês ' +i);
+                const temperatura = prompt('Digite a temperatura ' +i);
+                const month = document.getElementById('month');
+                const tr = document.createElement('tr');
+                const tdMonth = document.createElement('td');
+                tdMonth.innerText = month;
+                const tdTemperatura = document.createElement('td');
+                tdTemperatura.innerText = temperatura;
+
+                tr.appendChild(tdMonth);
+                tr.appendChild(tdTemperatura);
+
+                temp.appendChild(tr);
+
+            }
+
+        }
+        document.getElementById('add').addEventListener('click', adicionar);
+
+
+        function alterar(elemento) {
+            elemento.innerText = prompt('Qual o novo texto?');
+        }
+
+        function calcular(tdNota){
+            
+        }
+    </script>
+</body>
+
+</html>

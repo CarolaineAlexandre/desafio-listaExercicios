@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicio2</title>
 </head>
+
 <body>
-    
+    <h1>Compra de Maças</h1>
+    <hr>
+    <p>As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 seforem compradas pelo menos 12. Escreva um código que leia o número de maçãscompradas, calcule e escreva o custo total da compra.</p>
+    <input class="text" id="num1" type="text" placeholder="Insira o total de maças"> <br>
+    <button  onclick="main()">Calcular</button>
+    <button  onclick="apagar()">Apagar</button><br />
+    <div class="result" id="resp">Custo total:</div>
+    <script>
+        function main() {
+            
+        }
+
+        function apagar() {
+            document.getElementById('num1').value = '';
+            document.getElementById('resp').value = '';
+
+        }
+
+    </script>
 </body>
+
 </html>
